@@ -1,7 +1,10 @@
+// rate at which the text is "deghosted"
+const DEGHOST_INTERVAL = 75;
+// rate at which the text is "typed out"
+const TYPEWRITER_INTERVAL = 35;
+
 const container = document.querySelector(".text-container");
 const toggleButton = document.getElementById("mode-toggle");
-const DEGHOST_INTERVAL = 123;
-const TYPEWRITER_INTERVAL = 50;
 let isTokenMode = true; // true: token mode, false: character mode
 
 const sampleText = `
@@ -69,6 +72,7 @@ async function toggleMode() {
   animate();
 }
 
+// on click clear text and start over in the new mode
 toggleButton.addEventListener("click", toggleMode);
 
 animate();
