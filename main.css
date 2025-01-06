@@ -1,11 +1,20 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
   background-color: #1a1a1a;
   font-family: monospace;
+}
+
+.header {
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  text-align: center;
 }
 
 .container {
