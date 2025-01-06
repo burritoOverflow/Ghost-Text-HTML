@@ -17,7 +17,6 @@ body {
   padding-bottom: 2em;
   padding-left: 3em;
   padding-right: 3em;
-  padding-top: 2em;
   position: relative;
   transition: transform 500ms ease, box-shadow 532ms ease-in-out;
   width: 80%;
@@ -70,4 +69,20 @@ body {
 
 #mode-toggle:active {
   transform: translateY(1px);
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+  background-color: #fff;
+  display: inline-block;
+  height: 1.2em;
+  margin-left: 2px;
+  vertical-align: middle;
+  width: 4px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
