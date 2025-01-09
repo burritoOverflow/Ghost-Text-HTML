@@ -26,6 +26,7 @@ body {
   padding-bottom: 3em;
   padding-left: 3em;
   padding-right: 3em;
+  padding-top: 2em;
   position: relative;
   transition: transform 500ms ease, box-shadow 532ms ease-in-out;
   width: 80%;
