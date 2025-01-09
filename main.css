@@ -51,11 +51,19 @@ body {
   transition: opacity 0.1s ease;
 }
 
+.text-unit {
+  transition: font-style 112ms ease-in-out, opacity 100ms ease-out;
+}
+
 .ghost {
+  font-style: italic;
+  color: #938e8e;
   opacity: 0.3;
 }
 
 .solid {
+  font-style: normal;
+  color: whitesmoke;
   opacity: 1;
 }
 

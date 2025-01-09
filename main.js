@@ -38,6 +38,7 @@ function splitIntoUnits(text) {
 
     case "sentence": {
       const sentences = [];
+       // TODO this does not preserve the sentence structure
       const regex = /[^.!?]+[.!?]+(\s*)/g;
       let match;
       let lastIndex = 0;
