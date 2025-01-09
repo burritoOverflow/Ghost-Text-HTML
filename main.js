@@ -5,8 +5,9 @@ const TYPEWRITER_INTERVAL = 35;
 
 const container = document.querySelector(".text-container");
 const toggleButton = document.getElementById("mode-toggle");
+
 const modes = ["token", "character", "sentence"];
-let currentModeIndex = 2;
+let currentModeIndex = 0;
 
 const sampleText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi ipsum, finibus ac tortor nec, molestie faucibus nisl. Phasellus ut rhoncus massa, consequat rutrum odio. Quisque orci risus, tristique sit amet ultrices eu, pharetra ullamcorper odio.
 Nunc eget venenatis ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ac sem id elit volutpat feugiat ac vel justo. Nulla sit amet leo at tortor eleifend maximus sed id ligula. Sed condimentum mi urna, ut euismod lectus sodales at. Vestibulum eget viverra purus. Curabitur euismod eget tellus at tempus. Pellentesque at ornare elit, eget suscipit libero.
@@ -111,6 +112,7 @@ async function toggleMode() {
 }
 
 // on click clear text and start over in the new mode
+toggleButton.textContent = `Switch to ${getNextModeName()}`;
 toggleButton.addEventListener("click", toggleMode);
 
 animate();
