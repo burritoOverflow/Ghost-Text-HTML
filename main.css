@@ -104,3 +104,34 @@ body {
     opacity: 0;
   }
 }
+
+.underlined {
+  background-color: black;
+  text-decoration-color: whitesmoke;
+  text-decoration: underline;
+}
+
+.checkbox-wrapper {
+  border-radius: 25px;
+  border: 1px solid #4a4a4a;
+  bottom: 0.5rem;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 0.9rem;
+  left: 1rem;
+  padding-bottom: 0.2rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2rem;
+  position: absolute;
+  transition: box-shadow 333ms ease-in;
+}
+
+.checkbox-wrapper:hover {
+  box-shadow: 9px 6px 10px rgba(126, 123, 123, 0.3);
+}
+
+#underline-toggle {
+  accent-color: #4a4a4a;
+  cursor: pointer;
+}
